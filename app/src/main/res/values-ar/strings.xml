@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">الاسلام</string>
+    <string name="taspeh">تسبيح</string>
+    <string name="quran">قرآن</string>
+    <string name="kyss">قصص الانبياء</string>
+    <string name="azkaar">ذكرالله</string>
+    <string name="default_val">0</string>
+</resources>

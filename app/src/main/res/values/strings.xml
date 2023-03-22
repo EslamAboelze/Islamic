@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name" translatable="false">Islamic</string>
+    <string name="taspeh" translatable="false">hallel</string>
+    <string name="quran" translatable="false">book</string>
+    <string name="kyss" translatable="false">Prophets stories</string>
+    <string name="azkaar" translatable="false">attentions</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="btn_start" translatable="false">بدء</string>
+    <string name="btn_reset" translatable="false">مسح</string>
+    <string name="default_val">0</string>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/taspeh" android:icon="@drawable/tsp" android:title="@string/taspeh" />
+    <item android:title="@string/quran" android:id="@+id/soraListFragment2" android:icon="@drawable/book" />
+    <item android:title="@string/kyss" android:id="@+id/stories" android:icon="@drawable/stories" />
+    <item android:title="@string/azkaar" android:id="@+id/zykr" android:icon="@drawable/allah" />
+</menu>

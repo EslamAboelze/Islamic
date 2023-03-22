@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_component"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/taspeh"
+        android:name="com.example.islamic.Taspeh"
+        android:label="fragment_taspeh"
+        tools:layout="@layout/fragment_taspeh" />
+    <fragment
+        android:id="@+id/stories"
+        android:name="com.example.islamic.Stories"
+        android:label="fragment_stories"
+        tools:layout="@layout/fragment_stories" >
+        <action
+            android:id="@+id/action_stories_to_lifeOfProphet"
+            app:destination="@id/lifeOfProphet" />
+    </fragment>
+    <fragment
+        android:id="@+id/zykr"
+        android:name="com.example.islamic.Zykr"
+        android:label="fragment_zykr"
+        tools:layout="@layout/fragment_zykr" >
+        <action
+            android:id="@+id/action_zykr_to_descriptionOfZyker"
+            app:destination="@id/descriptionOfZyker" />
+    </fragment>
+    <fragment
+        android:id="@+id/soraListFragment2"
+        android:name="com.example.islamic.SoraListFragment"
+        android:label="SoraListFragment" >
+        <action
+            android:id="@+id/action_soraListFragment2_to_quranFragmentContainer"
+            app:destination="@id/quranFragmentContainer" />
+    </fragment>
+    <fragment
+        android:id="@+id/quranFragmentContainer"
+        android:name="com.example.islamic.qurancontainer.QuranFragmentContainer"
+        android:label="fragment_quran_container"
+        tools:layout="@layout/fragment_quran_container" >
+        <argument
+            android:name="StartPage"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/descriptionOfZyker"
+        android:name="com.example.islamic.viewmodel.DescriptionOfZyker"
+        android:label="fragment_description_of_zyker"
+        tools:layout="@layout/fragment_description_of_zyker" >
+
+        <argument
+            android:name="description"
+            app:argType="string"
+            />
+        <argument
+            android:name="name"
+            app:argType="string"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/lifeOfProphet"
+        android:name="com.example.islamic.viewmodel.LifeOfProphet"
+        android:label="fragment_life_of_prophet"
+        tools:layout="@layout/fragment_life_of_prophet" >
+        <argument
+            android:name="description"
+            app:argType="string" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.islamic.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_taspeh"
+            app:destination="@id/taspeh" />
+        <action
+            android:id="@+id/action_homeFragment_to_soraListFragment2"
+            app:destination="@id/soraListFragment2" />
+        <action
+            android:id="@+id/action_homeFragment_to_stories"
+            app:destination="@id/stories" />
+        <action
+            android:id="@+id/action_homeFragment_to_zykr"
+            app:destination="@id/zykr" />
+    </fragment>
+</navigation>
