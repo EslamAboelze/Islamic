@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Stories">
+    android:background="@color/back_ground_color"
+    tools:context=".ui.Stories">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/list_of_prophet"

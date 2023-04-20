@@ -6,11 +6,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="15dp"
-    android:background="#F7E7CE"
-    tools:context=".viewmodel.DescriptionOfZyker">
+    android:background="@color/back_ground_color"
+    tools:context=".ui.DescriptionOfZyker">
 
     <ScrollView
         android:layout_width="match_parent"
+        android:background="@color/back_ground_color"
         android:layout_height="match_parent">
 
         <LinearLayout

@@ -3,9 +3,8 @@ package com.example.islamic.uitils
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.islamic.MainActivity
-import com.example.islamic.R
 import com.example.islamic.databinding.ActivitySplashBinding
+import com.example.islamic.ui.MainActivity
 
 class Splash : AppCompatActivity() {
     lateinit var binding: ActivitySplashBinding

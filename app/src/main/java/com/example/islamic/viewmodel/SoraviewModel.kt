@@ -2,11 +2,9 @@ package com.example.islamic.viewmodel
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
-import androidx.lifecycle.ViewModel
 import com.example.islamic.data.database.QuarnDao
 import com.example.islamic.data.database.QuranDataBase
-import com.example.islamic.data.localdatabase.Sora
-import java.io.Closeable
+import com.example.islamic.model.Sora
 
 class SoraviewModel :AndroidViewModel {
     constructor(application: Application) : super(application)

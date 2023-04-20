@@ -9,9 +9,8 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.NavHostFragment
 import androidx.recyclerview.widget.RecyclerView
 import com.example.islamic.R
-import com.example.islamic.SoraListFragmentDirections
-import com.example.islamic.ZykrDirections
 import com.example.islamic.model.AzkarCatogries
+import com.example.islamic.ui.ZykrDirections
 
 class AzkarRecylerAdapter() : RecyclerView.Adapter<AzkarRecylerAdapter.ViewHolder>() {
     private var type: Int = 1

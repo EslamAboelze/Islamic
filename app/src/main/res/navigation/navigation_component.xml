@@ -7,64 +7,67 @@
 
     <fragment
         android:id="@+id/taspeh"
-        android:name="com.example.islamic.Taspeh"
-        android:label="fragment_taspeh"
-        tools:layout="@layout/fragment_taspeh" />
+        android:name="com.example.islamic.ui.Taspeh"
+        android:label="المسبحه"
+        tools:layout="@layout/fragment_taspeh" >
+        <action
+            android:id="@+id/action_taspeh_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
     <fragment
         android:id="@+id/stories"
-        android:name="com.example.islamic.Stories"
-        android:label="fragment_stories"
-        tools:layout="@layout/fragment_stories" >
+        android:name="com.example.islamic.ui.Stories"
+        android:label="جميع الانبياء "
+        tools:layout="@layout/fragment_stories">
         <action
             android:id="@+id/action_stories_to_lifeOfProphet"
             app:destination="@id/lifeOfProphet" />
     </fragment>
     <fragment
         android:id="@+id/zykr"
-        android:name="com.example.islamic.Zykr"
-        android:label="fragment_zykr"
-        tools:layout="@layout/fragment_zykr" >
+        android:name="com.example.islamic.ui.Zykr"
+        android:label="جميع الاذكار "
+        tools:layout="@layout/fragment_zykr">
         <action
             android:id="@+id/action_zykr_to_descriptionOfZyker"
             app:destination="@id/descriptionOfZyker" />
     </fragment>
     <fragment
         android:id="@+id/soraListFragment2"
-        android:name="com.example.islamic.SoraListFragment"
-        android:label="SoraListFragment" >
+        android:name="com.example.islamic.ui.SoraListFragment"
+        android:label="السور">
         <action
             android:id="@+id/action_soraListFragment2_to_quranFragmentContainer"
             app:destination="@id/quranFragmentContainer" />
     </fragment>
     <fragment
         android:id="@+id/quranFragmentContainer"
-        android:name="com.example.islamic.qurancontainer.QuranFragmentContainer"
-        android:label="fragment_quran_container"
-        tools:layout="@layout/fragment_quran_container" >
+        android:name="com.example.islamic.ui.QuranFragmentContainer"
+        tools:layout="@layout/fragment_quran_container">
         <argument
             android:name="StartPage"
             app:argType="integer" />
     </fragment>
     <fragment
         android:id="@+id/descriptionOfZyker"
-        android:name="com.example.islamic.viewmodel.DescriptionOfZyker"
-        android:label="fragment_description_of_zyker"
-        tools:layout="@layout/fragment_description_of_zyker" >
+        android:name="com.example.islamic.ui.DescriptionOfZyker"
+        android:label="الذكر"
+        tools:layout="@layout/fragment_description_of_zyker">
 
         <argument
             android:name="description"
-            app:argType="string"
-            />
+            app:argType="string" />
         <argument
             android:name="name"
-            app:argType="string"
-            />
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/lifeOfProphet"
         android:name="com.example.islamic.viewmodel.LifeOfProphet"
-        android:label="fragment_life_of_prophet"
-        tools:layout="@layout/fragment_life_of_prophet" >
+        android:label="قصه حياه النبي "
+        tools:layout="@layout/fragment_life_of_prophet">
         <argument
             android:name="description"
             app:argType="string" />
@@ -74,9 +77,9 @@
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.islamic.HomeFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home" >
+        android:name="com.example.islamic.ui.HomeFragment"
+        android:label="اسلامي"
+        tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/action_homeFragment_to_taspeh"
             app:destination="@id/taspeh" />
@@ -89,5 +92,35 @@
         <action
             android:id="@+id/action_homeFragment_to_zykr"
             app:destination="@id/zykr" />
+        <action
+            android:id="@+id/action_homeFragment_to_prayerTimes"
+            app:destination="@id/prayerTimes" />
+        <action
+            android:id="@+id/action_homeFragment_to_directionOfPrayer2"
+            app:destination="@id/directionOfPrayer" />
     </fragment>
+    <fragment
+        android:id="@+id/prayerTimes"
+        android:name="com.example.islamic.ui.PrayerTimes"
+        android:label="مواقيت الصلاه "
+        tools:layout="@layout/fragment_prayer_times" />
+    <fragment
+        android:id="@+id/directionOfPrayer"
+        android:name="com.example.islamic.ui.DirectionOfPrayer"
+        android:label="تحديد اتجاه القبله "
+        tools:layout="@layout/fragment_direction_of_prayer" />
+    <fragment
+        android:id="@+id/settingFrag"
+        android:name="com.example.islamic.ui.SettingFrag"
+        android:label="الاعدادات"
+        tools:layout="@layout/fragment_setting" />
+    <fragment
+        android:id="@+id/sharingFrag"
+        android:name="com.example.islamic.ui.SharingFrag"
+        android:label="مشاركه"
+        tools:layout="@layout/fragment_sharing" />
+    <fragment
+        android:id="@+id/rateFrag"
+        android:name="com.example.islamic.ui.RateFrag"
+        android:label="RateFrag" />
 </navigation>

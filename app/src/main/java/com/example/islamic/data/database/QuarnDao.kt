@@ -2,9 +2,7 @@ package com.example.islamic.data.database
 
 import androidx.room.Dao
 import androidx.room.Query
-import com.example.islamic.data.localdatabase.Aya
-import com.example.islamic.data.localdatabase.Jozz
-import com.example.islamic.data.localdatabase.Sora
+import com.example.islamic.model.Sora
 
 @Dao
 interface QuarnDao {

@@ -9,9 +9,8 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.NavHostFragment
 import androidx.recyclerview.widget.RecyclerView
 import com.example.islamic.R
-import com.example.islamic.StoriesDirections
-import com.example.islamic.ZykrDirections
 import com.example.islamic.model.Prophets
+import com.example.islamic.ui.StoriesDirections
 
 class ProphetRecylerAdapter() : RecyclerView.Adapter<ProphetRecylerAdapter.ViewHolder>() {
     lateinit var context: Context

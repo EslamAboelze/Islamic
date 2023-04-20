@@ -4,8 +4,7 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.example.islamic.data.localdatabase.Aya
-import com.example.islamic.data.localdatabase.Sora
+import com.example.islamic.model.Aya
 
 const val DATABASE_NAME = "Quran_DataBase"
 

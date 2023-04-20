@@ -1,7 +1,7 @@
 package com.example.islamic.adapter
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import com.example.islamic.Quran
+import com.example.islamic.ui.Quran
 
 private const val NUM_PAGES = 604
 

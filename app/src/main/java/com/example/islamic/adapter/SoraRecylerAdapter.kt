@@ -9,9 +9,8 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.NavHostFragment
 import androidx.recyclerview.widget.RecyclerView
 import com.example.islamic.R
-import com.example.islamic.SoraListFragmentDirections
-import com.example.islamic.data.localdatabase.Aya
-import com.example.islamic.data.localdatabase.Sora
+import com.example.islamic.model.Sora
+import com.example.islamic.ui.SoraListFragmentDirections
 
 class SoraRecylerAdapter() : RecyclerView.Adapter<SoraRecylerAdapter.ViewHolder>() {
 

@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="default_val">0</string>
+    <string name="prayertimes">اوقات الصلاه</string>
+    <string name="directionofkepla">اتجاه القبله</string>
+    <string name="communication">communction</string>
+    <string name="share">مشاركه</string>
+    <string name="setting">الاعدادات</string>
+    <string name="text_of_delete">مسح</string>
+    <string name="text_of_start">بدء</string>
+    <string name="set_location">Cairo</string>
+    <string name="fajr">الفجر</string>
+    <string name="square">square</string>
+    <string name="zero_hour">00</string>
+    <string name="shuruk">الشروق</string>
+    <string name="dhuhr">الظهر</string>
+    <string name="asr">العصر</string>
+    <string name="maghrib">المغرب</string>
+    <string name="isha">العشاء</string>
 </resources>

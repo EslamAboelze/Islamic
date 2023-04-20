@@ -4,7 +4,8 @@
     android:layout_height="wrap_content"
     android:padding="10dp"
     android:orientation="horizontal"
-    android:background="#F7E7CE">
+    android:background="@color/back_ground_color"
+    >
     <TextView
         android:id="@+id/nameofprophet"
         android:layout_width="0dp"

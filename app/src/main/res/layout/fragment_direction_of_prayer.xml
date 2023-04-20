@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_ground_color"
+    tools:context=".ui.DirectionOfPrayer">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="اتجاه القبله"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/compass"
+        android:layout_width="244dp"
+        android:background="@color/back_ground_color"
+        android:layout_height="249dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/compaa"
+        android:rotation="120"/>
+
+</RelativeLayout>

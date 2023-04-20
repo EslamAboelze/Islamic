@@ -1,10 +1,7 @@
 package com.example.islamic.viewmodel
 
 import android.content.Context
-import com.example.islamic.data.PageManager
-import com.example.islamic.data.database.QuarnDao
-import com.example.islamic.data.database.QuranDataBase
-import com.example.islamic.data.localdatabase.Sora
+import com.example.islamic.data.localdatabase.PageManager
 
 class QuranViewModel {
 
